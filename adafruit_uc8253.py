@@ -15,8 +15,8 @@ Implementation Notes
 
 **Hardware:**
 
-.. todo:: Add links to any specific hardware product page(s), or category page(s).
-  Use unordered list & hyperlink rST inline format: "* `Link Text <url>`_"
+* `3.7" 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253 Chipset <https://www.adafruit.com/product/6395>`_
+* `3.7" 416x240 Tri-Color Red / Black / White eInk - Bare Display - UC8253 Chipset <https://www.adafruit.com/product/6394>`_
 
 **Software and Dependencies:**
 
@@ -35,7 +35,7 @@ except ImportError:
 
 _START_SEQUENCE = (
     b"\x04\x00"  # POWERON
-    b"\x50\x01\xd7" # VCOM/CDI
+    b"\x50\x01\xd7"  # VCOM/CDI
     b"\x00\x02\xcf\x8d"  # PANELSETTING: 0b11001111, 0x8D
 )
 
@@ -48,7 +48,7 @@ __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_UC8253.git"
 class UC8253(EPaperDisplay):
     """UC8253 ePaper display driver"""
 
-    def __init__(self, bus, vcom_cdi=0xd7, **kwargs):
+    def __init__(self, bus, vcom_cdi=0xD7, **kwargs):
         start_sequence = bytearray(_START_SEQUENCE)
 
         if "highlight_color" in kwargs:
@@ -75,5 +75,5 @@ class UC8253(EPaperDisplay):
             write_color_ram_command=color_ram_command,
             refresh_display_command=0x12,
             refresh_time=16,
-            always_toggle_chip_select=True
+            always_toggle_chip_select=True,
         )

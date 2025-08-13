@@ -24,14 +24,11 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
-
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    3.7" 416x240 Monochrome Black/White eInk / ePaper - Bare Display - UC8253 Chipset <https://www.adafruit.com/product/6395>
+    3.7" 416x240 Tri-Color Red / Black / White eInk - Bare Display - UC8253 Chipset <https://www.adafruit.com/product/6394>
 
 .. toctree::
     :caption: Other Links

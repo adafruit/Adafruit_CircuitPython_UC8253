@@ -27,12 +27,7 @@ display_bus = FourWire(spi, command=epd_dc, chip_select=epd_cs, reset=epd_reset,
 time.sleep(1)
 
 display = adafruit_uc8253.UC8253(
-    display_bus,
-    width=240,
-    height=416,
-    busy_pin=epd_busy,
-    rotation=0,
-    highlight_color=0xff0000
+    display_bus, width=240, height=416, busy_pin=epd_busy, rotation=0, highlight_color=0xFF0000
 )
 
 g = displayio.Group()
