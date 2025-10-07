@@ -61,7 +61,7 @@ class UC8253(EPaperDisplay):
             panel_setting = 0b11011111
 
         start_sequence[4] = vcom_cdi
-        start_sequence[-1] = panel_setting
+        start_sequence[7] = panel_setting
 
         super().__init__(
             bus,
